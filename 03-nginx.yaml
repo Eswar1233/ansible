@@ -1,12 +1,11 @@
-- name: nginx install and run
+- name: nginx install and rrun
   hosts: frontend
-  become: yes # sudo access
   tasks:
   - name: install nginx server
     ansible.builtin.package:
       name: nginx
       state: present
-
+  
   - name: start nginx
     ansible.builtin.service:
       name: nginx
