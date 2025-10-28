@@ -9,3 +9,10 @@
   - name: print coure information
     ansible.builtin.debug:
       msg: "Hello {{COURSE}} , couse Duration {{DURATION}}, Trainer is {{TRAINER}}"
+  
+  - name: print coure information again
+    ansible.builtin.debug:
+      msg: "Hello {{COURSE}} , couse Duration {{DURATION}}, Trainer is {{TRAINER}}"
+
+
+
